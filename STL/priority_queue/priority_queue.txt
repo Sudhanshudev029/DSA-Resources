@@ -1,0 +1,86 @@
+Priority Queue in C++ STL
+What is a Priority Queue?
+
+A Priority Queue is a container in which elements are processed based on their priority, not the order in which they were inserted.
+
+In a priority queue, the element with the highest priority is always removed first.
+
+By default in C++ STL, priority_queue works as a Max Heap, meaning the largest element comes first.
+
+Priority Queue in STL
+
+Example:
+
+priority_queue<int> pq;
+priority_queue<string> pq;
+Functions in Priority Queue
+push()
+
+Used to insert an element into the priority queue.
+
+priority_queue<int> pq;
+pq.push(10);
+pq.push(20);
+pq.push(30);
+pop()
+
+Removes the top element (highest priority element) from the queue.
+
+pq.pop();
+top()
+
+Returns a reference to the highest priority element.
+
+pq.top();
+emplace()
+
+Inserts a new element in the priority queue.
+
+priority_queue<int> pq;
+pq.emplace(10);
+pq.emplace(20);
+size()
+
+Returns the number of elements in the priority queue.
+
+pq.size();
+empty()
+
+Checks whether the priority queue is empty or not.
+
+pq.empty();
+Types of Priority Queue
+1. Max Heap (Default)
+
+Largest element is at the top.
+
+Example:
+
+priority_queue<int> pq;
+
+pq.push(10);
+pq.push(30);
+pq.push(20);
+
+Top element:
+
+30
+2. Min Heap
+
+Smallest element is at the top.
+
+Syntax:
+
+priority_queue<int, vector<int>, greater<int>> pq;
+
+Example:
+
+priority_queue<int, vector<int>, greater<int>> pq;
+
+pq.push(10);
+pq.push(30);
+pq.push(20);
+
+Top element:
+
+10

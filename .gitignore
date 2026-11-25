@@ -1,0 +1,23 @@
+# Ignore every file by default (compiled binaries here have no extension,
+# so they can't be matched by name like *.exe or *.out)
+*
+
+# Re-include all directories so git can look inside them
+!*/
+
+# Keep source code
+!*.cpp
+!*.h
+!*.hpp
+
+# Keep notes / docs
+!*.txt
+!*.md
+
+# Keep this file
+!.gitignore
+
+# Editor / OS clutter (in case they ever match the rules above)
+.vscode/
+.idea/
+.DS_Store

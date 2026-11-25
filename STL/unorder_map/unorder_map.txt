@@ -1,0 +1,37 @@
+What is an unordered_map in STL?
+unordered_map in STL are associative containers where each element consists of a key value and a mapped value. Two mapped values cannot have the same key value. The elements can be in any order.
+
+Syntax:
+unordered_mapvariable_name;
+Functions in Unordered map:
+insert()
+Used to insert an element in the unordered_map.
+
+begin()
+Returns an iterator pointing to the first element in the map.
+
+end()
+Returns an iterator pointing to the theoretical element after the last element.
+
+clear()
+Deletes all the elements in the map.
+
+find()
+Searches for an element in the map and returns an iterator to it if found, otherwise returns end().
+
+erase()
+Deletes a single element by key or elements in a specified range using iterators.
+
+size()
+Returns the number of elements present in the map.
+
+empty()
+Checks if the map is empty or not.
+
+Other functions:
+cbegin() – it refers to the first element of the unordered_map.
+cend() – it refers to the theoretical element after the last element of the unordered_map.
+rbegin() – it points to the last element of the unordered_map.
+rend() – it points to the theoretical element before the first element of the unordered_map.
+emplace() – to insert an element in the unordered_map.
+max_size() – the maximum elements a unordered_map can hold.

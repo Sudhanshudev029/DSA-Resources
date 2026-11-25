@@ -1,0 +1,43 @@
+What is a Multiset in C++ STL?
+A multiset in STL is an associative container similar to a set, but it allows duplicate elements.
+
+Syntax
+multiset<object_type> variable_name;
+Example
+multiset<int> s;
+multiset<string> str;
+Functions in Multiset
+1. insert()  to insert an element
+multiset<int> s;
+s.insert(1);
+s.insert(2);
+2. begin()  returns iterator to first element
+s.begin();
+3. end()  returns iterator after last element
+s.end();
+4. count()  count occurrences of an element
+multiset<int> s;
+s.insert(1);
+s.insert(2);
+s.count(2); // returns 1
+5. clear()  deletes all elements
+s.clear();
+6. find()  search an element
+multiset<int> s;
+s.insert(1);
+s.insert(2);
+if (s.find(2) != s.end())
+    cout << "true" << endl;
+7. erase()  delete a single element or range
+s.erase();
+8. size()  returns number of elements
+s.size();
+9. empty()  checks if multiset is empty
+s.empty();
+Other Useful Functions
+cbegin()  returns constant iterator to first element
+cend()  returns constant iterator after last element
+rbegin()  returns reverse iterator to last element
+rend()  returns reverse iterator before first element
+emplace()  insert an element efficiently
+max_size()  returns maximum number of elements a multiset can hold
